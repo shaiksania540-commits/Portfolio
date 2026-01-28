@@ -39,5 +39,3 @@ You can view/download my resume here:
 
 ---
 
-
-Do you want me to do that?
