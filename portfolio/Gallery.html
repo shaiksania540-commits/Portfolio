@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Shaik Sania</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .lightbox {
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+    .lightbox img {
+      max-width:90%;
+      max-height:90%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .lightbox:target { display: flex; }
+    .gallery img { cursor: pointer; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+    .gallery img:hover { transform: scale(1.1); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="logo">Sania</a>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+
+    <h3>Hobbies </h3>
+    <div class="gallery">
+    
+      <a href="Coding1.jpg"><img src="Coding1.jpg" alt="Coding"></a>
+      
+      <a href="Badminton.jpg"><img src="Badminton.jpg" alt="Badminton"></a>
+    </div>
+
+    <h3>Inspiration </h3>
+    <div class="gallery">
+      <a href="ElonMusk.jpg"><img src="ElonMusk.jpg" alt="Inspiration 1" ></a>
+        
+    </div>
+
+    <h3>Achievements </h3>
+    <div class="gallery">
+      <a href="Goals.jpg"><img src="Goals.jpg" alt="Achievement 1"></a>
+      <a href="Approach.png"><img src="Approach.png" alt="Achievement 2"></a>
+    </div>
+  </section>
+
+<div id="hobby1" class="lightbox">
+  <a href="#"><img src="Coding1.jpg"></a>
+</div>
+
+<div id="hobby2" class="lightbox">
+  <a href="#"><img src="Badminton.jpg"></a>
+</div>
+
+<div id="inspire1" class="lightbox">
+  <a href="#"><img src="ElonMusk.jpg"></a>
+</div>
+
+<div id="achieve1" class="lightbox">
+  <a href="#"><img src="Goals.jpg"></a>
+</div>
+
+<div id="achieve2" class="lightbox">
+  <a href="#"><img src="Approach.png"></a>
+</div>
+
+ 
+
+</body>
+</html>
