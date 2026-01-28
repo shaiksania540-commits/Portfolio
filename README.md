@@ -15,3 +15,8 @@ This repository hosts my personal portfolio website showcasing my projects, skil
 ## Purpose
 Created to demonstrate my frontend development and UI skills.
 
+## Live Demo
+
+Check out the hosted version of my portfolio here:  
+👉 https://cheery-hamster-616574.netlify.app/
+
